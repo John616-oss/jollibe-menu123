@@ -35,7 +35,6 @@
             btnLog = new Button();
             label1 = new Label();
             pictureBox1 = new PictureBox();
-            btnStocks = new Button();
             btnEmployee = new Button();
             dataGridView1 = new DataGridView();
             txtSearch = new TextBox();
@@ -51,6 +50,8 @@
             textBox3 = new TextBox();
             textBox2 = new TextBox();
             textBox1 = new TextBox();
+            button4 = new Button();
+            label7 = new Label();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -87,7 +88,6 @@
             panel2.Controls.Add(btnLog);
             panel2.Controls.Add(label1);
             panel2.Controls.Add(pictureBox1);
-            panel2.Controls.Add(btnStocks);
             panel2.Controls.Add(btnEmployee);
             panel2.Dock = DockStyle.Left;
             panel2.Location = new Point(0, 67);
@@ -132,19 +132,6 @@
             pictureBox1.TabIndex = 2;
             pictureBox1.TabStop = false;
             // 
-            // btnStocks
-            // 
-            btnStocks.BackColor = Color.Red;
-            btnStocks.FlatStyle = FlatStyle.Popup;
-            btnStocks.ForeColor = SystemColors.ButtonFace;
-            btnStocks.Location = new Point(21, 279);
-            btnStocks.Margin = new Padding(3, 2, 3, 2);
-            btnStocks.Name = "btnStocks";
-            btnStocks.Size = new Size(173, 40);
-            btnStocks.TabIndex = 3;
-            btnStocks.Text = "STOCKS";
-            btnStocks.UseVisualStyleBackColor = false;
-            // 
             // btnEmployee
             // 
             btnEmployee.BackColor = Color.Red;
@@ -161,16 +148,16 @@
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(217, 113);
+            dataGridView1.Location = new Point(224, 194);
             dataGridView1.Margin = new Padding(3, 2, 3, 2);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(580, 428);
+            dataGridView1.Size = new Size(636, 347);
             dataGridView1.TabIndex = 2;
             // 
             // txtSearch
             // 
-            txtSearch.Location = new Point(492, 85);
+            txtSearch.Location = new Point(563, 167);
             txtSearch.Margin = new Padding(3, 2, 3, 2);
             txtSearch.Name = "txtSearch";
             txtSearch.PlaceholderText = "Search here";
@@ -184,7 +171,7 @@
             button1.FlatStyle = FlatStyle.Popup;
             button1.Font = new Font("Microsoft YaHei UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button1.ForeColor = SystemColors.ButtonFace;
-            button1.Location = new Point(694, 83);
+            button1.Location = new Point(765, 164);
             button1.Margin = new Padding(3, 2, 3, 2);
             button1.Name = "button1";
             button1.Size = new Size(95, 26);
@@ -207,15 +194,15 @@
             panel3.Controls.Add(textBox2);
             panel3.Controls.Add(textBox1);
             panel3.Dock = DockStyle.Right;
-            panel3.Location = new Point(795, 67);
+            panel3.Location = new Point(866, 67);
             panel3.Name = "panel3";
-            panel3.Size = new Size(360, 474);
+            panel3.Size = new Size(289, 474);
             panel3.TabIndex = 5;
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(93, 190);
+            label6.Location = new Point(64, 233);
             label6.Name = "label6";
             label6.Size = new Size(38, 15);
             label6.TabIndex = 9;
@@ -224,7 +211,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(93, 140);
+            label5.Location = new Point(64, 183);
             label5.Name = "label5";
             label5.Size = new Size(38, 15);
             label5.TabIndex = 8;
@@ -233,7 +220,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(93, 94);
+            label4.Location = new Point(64, 137);
             label4.Name = "label4";
             label4.Size = new Size(38, 15);
             label4.TabIndex = 7;
@@ -242,7 +229,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(93, 40);
+            label3.Location = new Point(64, 83);
             label3.Name = "label3";
             label3.Size = new Size(38, 15);
             label3.TabIndex = 6;
@@ -250,7 +237,7 @@
             // 
             // button3
             // 
-            button3.Location = new Point(93, 291);
+            button3.Location = new Point(64, 334);
             button3.Name = "button3";
             button3.Size = new Size(195, 31);
             button3.TabIndex = 5;
@@ -259,7 +246,7 @@
             // 
             // button2
             // 
-            button2.Location = new Point(93, 247);
+            button2.Location = new Point(64, 290);
             button2.Name = "button2";
             button2.Size = new Size(195, 31);
             button2.TabIndex = 4;
@@ -268,37 +255,58 @@
             // 
             // textBox4
             // 
-            textBox4.Location = new Point(93, 208);
+            textBox4.Location = new Point(64, 251);
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(195, 23);
             textBox4.TabIndex = 3;
             // 
             // textBox3
             // 
-            textBox3.Location = new Point(93, 158);
+            textBox3.Location = new Point(64, 201);
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(195, 23);
             textBox3.TabIndex = 2;
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(93, 112);
+            textBox2.Location = new Point(64, 155);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(195, 23);
             textBox2.TabIndex = 1;
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(93, 67);
+            textBox1.Location = new Point(64, 110);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(195, 23);
             textBox1.TabIndex = 0;
+            // 
+            // button4
+            // 
+            button4.Location = new Point(765, 136);
+            button4.Name = "button4";
+            button4.Size = new Size(95, 23);
+            button4.TabIndex = 6;
+            button4.Text = "button4";
+            button4.UseVisualStyleBackColor = true;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label7.Location = new Point(224, 157);
+            label7.Name = "label7";
+            label7.Size = new Size(102, 32);
+            label7.TabIndex = 7;
+            label7.Text = "STOCKS";
             // 
             // admin
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1155, 541);
+            Controls.Add(label7);
+            Controls.Add(button4);
             Controls.Add(panel3);
             Controls.Add(button1);
             Controls.Add(txtSearch);
@@ -326,7 +334,6 @@
         private Panel panel1;
         private Panel panel2;
         private PictureBox pictureBox1;
-        private Button btnStocks;
         private Button btnEmployee;
         private Label label1;
         private Label label2;
@@ -345,5 +352,7 @@
         private TextBox textBox3;
         private TextBox textBox2;
         private TextBox textBox1;
+        private Button button4;
+        private Label label7;
     }
 }

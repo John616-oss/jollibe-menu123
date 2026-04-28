@@ -40,16 +40,18 @@
             txtSearch = new TextBox();
             button1 = new Button();
             panel3 = new Panel();
+            label8 = new Label();
+            txtQuantity = new TextBox();
             label6 = new Label();
             label5 = new Label();
             label4 = new Label();
             label3 = new Label();
-            button3 = new Button();
-            button2 = new Button();
-            textBox4 = new TextBox();
-            textBox3 = new TextBox();
-            textBox2 = new TextBox();
-            textBox1 = new TextBox();
+            btnDelete = new Button();
+            btnSave = new Button();
+            txtCategory = new TextBox();
+            txtPrice = new TextBox();
+            txtProduct = new TextBox();
+            txtID = new TextBox();
             button4 = new Button();
             label7 = new Label();
             panel1.SuspendLayout();
@@ -154,6 +156,7 @@
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.Size = new Size(636, 347);
             dataGridView1.TabIndex = 2;
+            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
             // txtSearch
             // 
@@ -183,111 +186,138 @@
             // panel3
             // 
             panel3.BackColor = Color.LightSteelBlue;
+            panel3.Controls.Add(label8);
+            panel3.Controls.Add(txtQuantity);
             panel3.Controls.Add(label6);
             panel3.Controls.Add(label5);
             panel3.Controls.Add(label4);
             panel3.Controls.Add(label3);
-            panel3.Controls.Add(button3);
-            panel3.Controls.Add(button2);
-            panel3.Controls.Add(textBox4);
-            panel3.Controls.Add(textBox3);
-            panel3.Controls.Add(textBox2);
-            panel3.Controls.Add(textBox1);
+            panel3.Controls.Add(btnDelete);
+            panel3.Controls.Add(btnSave);
+            panel3.Controls.Add(txtCategory);
+            panel3.Controls.Add(txtPrice);
+            panel3.Controls.Add(txtProduct);
+            panel3.Controls.Add(txtID);
             panel3.Dock = DockStyle.Right;
             panel3.Location = new Point(866, 67);
             panel3.Name = "panel3";
             panel3.Size = new Size(289, 474);
             panel3.TabIndex = 5;
             // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label8.Location = new Point(52, 263);
+            label8.Name = "label8";
+            label8.Size = new Size(81, 21);
+            label8.TabIndex = 11;
+            label8.Text = "Quantity:";
+            // 
+            // txtQuantity
+            // 
+            txtQuantity.Location = new Point(52, 287);
+            txtQuantity.Name = "txtQuantity";
+            txtQuantity.Size = new Size(195, 23);
+            txtQuantity.TabIndex = 10;
+            // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(64, 233);
+            label6.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label6.Location = new Point(52, 213);
             label6.Name = "label6";
-            label6.Size = new Size(38, 15);
+            label6.Size = new Size(84, 21);
             label6.TabIndex = 9;
-            label6.Text = "label6";
+            label6.Text = "Category:";
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(64, 183);
+            label5.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label5.Location = new Point(52, 155);
             label5.Name = "label5";
-            label5.Size = new Size(38, 15);
+            label5.Size = new Size(52, 21);
             label5.TabIndex = 8;
-            label5.Text = "label5";
+            label5.Text = "Price:";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(64, 137);
+            label4.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label4.Location = new Point(52, 105);
             label4.Name = "label4";
-            label4.Size = new Size(38, 15);
+            label4.Size = new Size(81, 21);
             label4.TabIndex = 7;
-            label4.Text = "label4";
+            label4.Text = "Products:";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(64, 83);
+            label3.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.Location = new Point(52, 54);
             label3.Name = "label3";
-            label3.Size = new Size(38, 15);
+            label3.Size = new Size(29, 21);
             label3.TabIndex = 6;
-            label3.Text = "label3";
+            label3.Text = "Id:";
             // 
-            // button3
+            // btnDelete
             // 
-            button3.Location = new Point(64, 334);
-            button3.Name = "button3";
-            button3.Size = new Size(195, 31);
-            button3.TabIndex = 5;
-            button3.Text = "button3";
-            button3.UseVisualStyleBackColor = true;
+            btnDelete.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnDelete.Location = new Point(52, 378);
+            btnDelete.Name = "btnDelete";
+            btnDelete.Size = new Size(195, 35);
+            btnDelete.TabIndex = 5;
+            btnDelete.Text = "Delete Record";
+            btnDelete.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnSave
             // 
-            button2.Location = new Point(64, 290);
-            button2.Name = "button2";
-            button2.Size = new Size(195, 31);
-            button2.TabIndex = 4;
-            button2.Text = "button2";
-            button2.UseVisualStyleBackColor = true;
+            btnSave.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnSave.Location = new Point(52, 337);
+            btnSave.Name = "btnSave";
+            btnSave.Size = new Size(195, 35);
+            btnSave.TabIndex = 4;
+            btnSave.Text = "Save Record";
+            btnSave.UseVisualStyleBackColor = true;
+            btnSave.Click += btnSave_Click;
             // 
-            // textBox4
+            // txtCategory
             // 
-            textBox4.Location = new Point(64, 251);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(195, 23);
-            textBox4.TabIndex = 3;
+            txtCategory.Location = new Point(52, 237);
+            txtCategory.Name = "txtCategory";
+            txtCategory.Size = new Size(195, 23);
+            txtCategory.TabIndex = 3;
             // 
-            // textBox3
+            // txtPrice
             // 
-            textBox3.Location = new Point(64, 201);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(195, 23);
-            textBox3.TabIndex = 2;
+            txtPrice.Location = new Point(52, 179);
+            txtPrice.Name = "txtPrice";
+            txtPrice.Size = new Size(195, 23);
+            txtPrice.TabIndex = 2;
             // 
-            // textBox2
+            // txtProduct
             // 
-            textBox2.Location = new Point(64, 155);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(195, 23);
-            textBox2.TabIndex = 1;
+            txtProduct.Location = new Point(52, 129);
+            txtProduct.Name = "txtProduct";
+            txtProduct.Size = new Size(195, 23);
+            txtProduct.TabIndex = 1;
             // 
-            // textBox1
+            // txtID
             // 
-            textBox1.Location = new Point(64, 110);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(195, 23);
-            textBox1.TabIndex = 0;
+            txtID.Location = new Point(52, 78);
+            txtID.Name = "txtID";
+            txtID.Size = new Size(195, 23);
+            txtID.TabIndex = 0;
             // 
             // button4
             // 
-            button4.Location = new Point(765, 136);
+            button4.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button4.Location = new Point(765, 132);
             button4.Name = "button4";
-            button4.Size = new Size(95, 23);
+            button4.Size = new Size(95, 27);
             button4.TabIndex = 6;
-            button4.Text = "button4";
+            button4.Text = "REFRESH";
             button4.UseVisualStyleBackColor = true;
             // 
             // label7
@@ -346,13 +376,15 @@
         private Label label5;
         private Label label4;
         private Label label3;
-        private Button button3;
-        private Button button2;
-        private TextBox textBox4;
-        private TextBox textBox3;
-        private TextBox textBox2;
-        private TextBox textBox1;
+        private Button btnDelete;
+        private Button btnSave;
+        private TextBox txtCategory;
+        private TextBox txtPrice;
+        private TextBox txtProduct;
+        private TextBox txtID;
         private Button button4;
         private Label label7;
+        private Label label8;
+        private TextBox txtQuantity;
     }
 }

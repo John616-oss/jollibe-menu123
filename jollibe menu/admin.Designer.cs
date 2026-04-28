@@ -62,10 +62,11 @@
             // 
             panel1.BackColor = Color.Red;
             panel1.Controls.Add(label2);
-            panel1.Location = new Point(-5, -5);
+            panel1.Dock = DockStyle.Top;
+            panel1.Location = new Point(0, 0);
             panel1.Margin = new Padding(3, 2, 3, 2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1165, 67);
+            panel1.Size = new Size(1155, 67);
             panel1.TabIndex = 0;
             // 
             // label2
@@ -88,10 +89,11 @@
             panel2.Controls.Add(pictureBox1);
             panel2.Controls.Add(btnStocks);
             panel2.Controls.Add(btnEmployee);
-            panel2.Location = new Point(-5, 61);
+            panel2.Dock = DockStyle.Left;
+            panel2.Location = new Point(0, 67);
             panel2.Margin = new Padding(3, 2, 3, 2);
             panel2.Name = "panel2";
-            panel2.Size = new Size(224, 475);
+            panel2.Size = new Size(218, 474);
             panel2.TabIndex = 1;
             // 
             // btnLog
@@ -163,7 +165,7 @@
             dataGridView1.Margin = new Padding(3, 2, 3, 2);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(580, 423);
+            dataGridView1.Size = new Size(580, 428);
             dataGridView1.TabIndex = 2;
             // 
             // txtSearch
@@ -204,9 +206,10 @@
             panel3.Controls.Add(textBox3);
             panel3.Controls.Add(textBox2);
             panel3.Controls.Add(textBox1);
-            panel3.Location = new Point(795, 61);
+            panel3.Dock = DockStyle.Right;
+            panel3.Location = new Point(795, 67);
             panel3.Name = "panel3";
-            panel3.Size = new Size(365, 475);
+            panel3.Size = new Size(360, 474);
             panel3.TabIndex = 5;
             // 
             // label6
